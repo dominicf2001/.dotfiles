@@ -1,0 +1,63 @@
+#
+# Applications
+#
+
+# terminal emulator
+super + q 
+	st
+
+# web browser
+super + w
+	librewolf
+
+# sound control
+super + s
+	pavucontrol
+
+# emacs
+super + e
+	emacs	
+
+#
+# Misc
+#
+
+# config reload
+super + Escape
+	envreload
+
+#
+# Navigation
+#
+
+ctrl + alt + p
+     bspc node -f next.local
+
+ctrl + alt + n
+      bspc node -f prev.local
+
+#
+# General
+#
+
+# close + kill
+ctrl + alt + v
+	bspc node -{c,k}
+
+# brightness
+XF86MonBrightnessDown
+	xbacklight -dec 10
+
+XF86MonBrightnessUp
+	xbacklight -inc 10
+
+# volume
+XF86AudioRaiseVolume
+	amixer set Master 10%+
+
+XF86AudioLowerVolume
+	amixer set Master 10%-
+
+XF86AudioMute
+	amixer set Master 0%
+	
